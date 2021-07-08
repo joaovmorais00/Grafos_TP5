@@ -85,7 +85,7 @@ void confereCorte(int **grafo, int numVertices, int* origemArestas, int* destino
         printf("representam um corte de capacidade %d\n\n", capacidade);
     }else{
         printf("\nAs Arestas: ");
-        for(int i=0; i<numArestasCorte; i++) printf(", %d->%d");
+        for(int i=0; i<numArestasCorte; i++) printf("%d->%d, ", origemArestas[i], destinoArestas[i]);
         printf("não representam um corte\n");
     }
     for(int i =0; i<numVertices; i++) free(distancias[i]);
